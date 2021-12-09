@@ -1,30 +1,30 @@
 <div align="center">
     <img src="https://github.com/frappe/design/blob/master/logos/logo-2019/frappe-gantt-logo.png" height="128">
-    <h2>Frappe Gantt</h2>
+    <h2>Frappe Gantt - Jalali </h2>
     <p align="center">
-        <p>A simple, interactive, modern gantt chart library for the web</p>
-        <a href="https://frappe.github.io/gantt">
-            <b>View the demo »</b>
+        <p>A simple, interactive, modern jalali gantt chart library for the web</p>
+        <a href="https://gantt.yiiman.ir/">
+            <b>View the jalali demo »</b>
         </a>
     </p>
 </div>
 
 <p align="center">
     <a href="https://frappe.github.io/gantt">
-        <img src="https://cloud.githubusercontent.com/assets/9355208/21537921/4a38b194-cdbd-11e6-8110-e0da19678a6d.png">
+        <img src="https://github.com/yiiman-dev/gantt/blob/master/.images/jalali.png">
     </a>
 </p>
 
 ### Install
 ```
-npm install frappe-gantt
+npm install frappe-gantt-jalali
 ```
 
 ### Usage
 Include it in your HTML:
 ```
-<script src="frappe-gantt.min.js"></script>
-<link rel="stylesheet" href="frappe-gantt.css">
+<script src="dist/frappe-gantt.min.js"></script>
+<link rel="stylesheet" href="dist/frappe-gantt.css">
 ```
 
 And start hacking:
@@ -57,7 +57,9 @@ var gantt = new Gantt("#gantt", tasks, {
     padding: 18,
     view_mode: 'Day',   
     date_format: 'YYYY-MM-DD',
-    custom_popup_html: null
+    custom_popup_html: null,
+    is_jalali: true,
+    language: 'fa'
 });
 ```
 
@@ -72,3 +74,6 @@ License: MIT
 
 ------------------
 Project maintained by [frappe](https://github.com/frappe)
+
+and converted to jalali by [YiiMan](https://github.com/yiiman-dev)
+
