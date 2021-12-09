@@ -11,6 +11,10 @@
     "test:watch": "jest --watch",
     "prettier": "prettier es6 --write \"{src/*,tests/*,rollup.config}.js\""
   },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/frappe/gantt.git"
@@ -43,5 +47,10 @@
   },
   "eslintIgnore": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "jalali-date": "^1.1.4",
+    "moment": "^2.29.1",
+    "moment-jalaali": "^0.9.4"
+  }
 }
