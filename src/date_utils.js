@@ -208,7 +208,8 @@ export default class {
             let jYear = jalali.format('jYYYY');
             let jMonth = jalali.format('jMM');
             let jDay = jalali.format('jDD');
-            let jdateNum = jMonth - 1;
+            if (jMonth === '13') jMonth = '1';
+            let jdateNum = parseInt(jMonth) - 1;
             format_map = {
                 YYYY: jYear,
                 MM: jMonth,
@@ -221,7 +222,6 @@ export default class {
                 MMMM: month_names[this.options.language][jdateNum],
                 MMM: month_names[this.options.language][jdateNum]
             };
-            debugger;
         }
 
         let str = format_string;
